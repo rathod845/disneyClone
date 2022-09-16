@@ -1,4 +1,3 @@
-import { getSession, useSession } from "next-auth/client";
 import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -9,16 +8,15 @@ import { PlusIcon, XIcon } from "@heroicons/react/solid";
 import ReactPlayer from "react-player/lazy";
 
 function Show({ result }) {
-  const [session] = useSession();
   const BASE_URL = "https://image.tmdb.org/t/p/original/";
   const router = useRouter();
   const [showPlayer, setShowPlayer] = useState(false);
 
-  useEffect(() => {
-    if (!session) {
-      router.push("/");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (!session) {
+  //     router.push("/");
+  //   }
+  // }, []);
 
   const index = result.videos.results.findIndex(
     element => element.type === "Trailer"
@@ -127,7 +125,6 @@ function Show({ result }) {
 export default Show;
 
 export async function getServerSideProps(context) {
-  const session = await getSession(context);
   const { id } = context.query;
 
   const request = await fetch(
@@ -136,7 +133,6 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      session,
       result: request,
     },
   };

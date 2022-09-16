@@ -1,4 +1,3 @@
-import { getSession, useSession } from "next-auth/client";
 import Head from "next/head";
 import Brands from "../components/Brands";
 import MoviesCollection from "../components/MoviesCollection";
@@ -13,8 +12,6 @@ export default function Home({
   top_ratedMovies,
   top_ratedShows,
 }) {
-  const [session] = useSession();
-
   return (
     <div>
       <Head>
@@ -43,8 +40,6 @@ export default function Home({
 }
 
 export async function getServerSideProps(context) {
-  const session = await getSession(context);
-
   const [
     popularMoviesRes,
     popularShowsRes,
@@ -74,7 +69,6 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      session,
       popularMovies: popularMovies.results,
       popularShows: popularShows.results,
       top_ratedMovies: top_ratedMovies.results,
