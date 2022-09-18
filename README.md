@@ -1,29 +1,18 @@
-# Next.js + Tailwind CSS Example
+- Created A Disney Clone app with the help of next.js and Tailwind css as a styling
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+- for data i use TMDB API for image and the description of the movie with the categories
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+- Also in this Project i use SSR for rendering the pages.
+for reference https://nextjs.org/docs/advanced-features/react-18/streaming
 
-## Preview
+<h2>Screen Shots </h2>
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+<h3>Home Page </h3>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+![image](https://user-images.githubusercontent.com/65488251/190898583-f0899c6d-13ad-4bfb-8a41-81995a43a041.png)
 
-## Deploy your own
+![image](https://user-images.githubusercontent.com/65488251/190898606-d8eebb07-bb56-4937-970d-46b6231d9db6.png)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+<h3>Movies Page </h3>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+![image](https://user-images.githubusercontent.com/65488251/190898629-7b556c66-b3c6-44d4-964c-4dccaf773a2a.png)
