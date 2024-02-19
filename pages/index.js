@@ -35,6 +35,7 @@ export default function Home({
         <ShowsCollection results={top_ratedShows} title="Top Rated Shows" />
       </main>
       {/* )} */}
+      <script src="https://app.dev.wotnot.io/chat-widget/VGYh5KEUxnaS043726528180Llb9R8pe.js" defer></script>
     </div>
   );
 }
